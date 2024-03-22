@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresenius Kabi - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Header Styles */
+        header {
+            background-color: #0071bc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            height: 50px;
+        }
+        .logo-right img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+        }
+        .header-text {
+            text-align: left;
+        }
+        /* Navigation Styles */
+        nav {
+            background-color: #003087;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        /* Main Content Styles */
+        .main-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        /* Information Section Styles */
+        .information-section {
+            width: 70%;
+            padding: 20px;
+            border-radius: 8px;
+            color: black;
+            text-align: justify;
+        }
+        /* Training Request Form Styles */
+        #training-request-container {
+            width: 30%;
+            padding: 20px;
+        }
+        #training-request-form input,
+        #training-request-form select,
+        #training-request-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        #training-request-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #training-request-form button:hover {
+            background-color: #0056b3;
+        }
+  /* Footer Styles */
+  footer {
+            background-color: #003087;
+            color: white;
+            padding: 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 15px;
+            line-height: 0;
+            font-size: 10px;
+        }
+        /* Button Styles */
+        .hubungi-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #0071bc;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        align-items: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Service Center MedTech</h1>
+        </div>
+        <div class="logo-right">
+            <img src="Time to reinvent.jpg" alt="Right Image">
+        </div>
+    </header>
+    <nav>
+        <a href="home.html">Beranda</a>
+        <a href="infromasi layanan.html">Informasi Layanan</a>
+        <a href="login.html">Login</a>
+        <a href="contact us.html">Hubungi Kami</a>
+        <a href="Design product.html">HB Meter Kalkulasi</a>
+        <a href="Product.html">Product</a>
+</nav>
+    <div class="main-content">
+        <!-- Information Section -->
+        <div class="information-section">
+    
+            <h2>Permohonan Pelatihan MedTech</h2>
+            <p>Kami menyediakan program pelatihan MedTech yang komprehensif dan terkini untuk membantu Anda meningkatkan pengetahuan dan keterampilan dalam penggunaan produk kami. Pelatihan kami dirancang untuk memenuhi kebutuhan beragam pengguna, termasuk tenaga medis, petugas kesehatan, dan profesional medis lainnya.</p>
+            <p>Program pelatihan kami mencakup berbagai topik, seperti penggunaan perangkat medis, prosedur klinis, pemeliharaan peralatan, dan praktik terbaik dalam industri medis. Kami juga menyediakan pelatihan khusus untuk penanganan darurat dan situasi medis yang kritis.</p>
+            <p>Tim pelatihan kami terdiri dari para ahli yang berpengalaman dalam bidang mereka masing-masing. Mereka akan membimbing Anda melalui sesi pelatihan yang interaktif dan informatif, serta siap membantu Anda menjawab pertanyaan dan memberikan saran selama dan setelah pelatihan.</p>
+            <p>Untuk informasi lebih lanjut tentang program pelatihan MedTech kami, silakan menghubungi kami melalui formulir permohonan pelatihan di sebelah kanan.</p>
+        </div>
+        <!-- Training Request Form -->
+        <div id="training-request-container">
+            <h2>Form Permohonan Pelatihan</h2>
+            <form id="training-request-form">
+                <input type="text" id="name" name="name" placeholder="Nama Lengkap" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon" required>
+                <input type="text" id="institution" name="institution" placeholder="Nama Institusi" required>
+                <select id="product" name="product" required>
+                    <option value="">Pilih Produk</option>
+                    <option value="Agilia">Agilia</option>
+                    <option value="Infusia">Infusia</option>
+                    <option value="Amika">Amika</option>
+                    <option value="AmiCORE">AmiCORE</option>
+                    <option value="AMICUS">AMICUS</option>
+                    <option value="Compomat G5">Compomat G5</option>
+                </select>
+                <select id="request-type" name="request-type" required>
+                    <option value="">Pilih Jenis Permohonan</option>
+                    <option value="Application">Permohonan Aplikasi</option>
+                    <option value="Engineer">Permohonan Engineer</option>
+                </select>
+                <textarea id="message" name="message" placeholder="Pesan Tambahan" required></textarea>
+                <button type="submit">Kirim Permohonan</button>
+            </form>
+        </div>
+    </div>
+    <button class="hubungi-button"><a href="contact us.html">Hubungi Kami</a></button>
+    <footer>
+        <p>&copy; 2024 MedTech DEMO. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('training-request-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var form = event.target;
+            var formData = new FormData(form);
+            // Here you can handle the submission of the training request form
+            // For demonstration purposes, I'm just logging the form data
+            formData.forEach(function(value, key) {
+                console.log(key, value);
+            });
+        });
+    </script>
+</body>
+</html>
